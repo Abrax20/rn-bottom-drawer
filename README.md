@@ -66,6 +66,7 @@ export default class App extends React.Component {
 | shadow | bool | true | if **true**, the top of the drawer will have a shadow. |
 | onExpanded | func | -- | A callback function triggered when the drawer is swiped into up position |
 | onCollapsed | func | -- | A callback function triggered when the drawer is swiped into down position |
+| style | object | {} | The React Native style prop for style the drawer. |
 
 ### Questions?
 Feel free to contact me at [jackdillklein@gmail.com](mailto:jackdillklein@gmail.com) or [create an issue](https://github.com/jacklein/rn-bottom-drawer/issues/new)
