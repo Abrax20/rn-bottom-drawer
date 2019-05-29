@@ -62,7 +62,7 @@ export default class BottomDrawer extends Component{
     /**
      * The React Native style of the drawer Component
      */
-    style: PropTypes.style
+    style: PropTypes.object
   }
 
   static defaultProps = {
