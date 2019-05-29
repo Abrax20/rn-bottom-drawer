@@ -31,9 +31,9 @@ export default class Animator extends Component{
             styles.animationContainer(this.props.containerHeight, this.props.backgroundColor),
             styles.roundedEdges(this.props.roundedEdges),
             styles.shadow(this.props.shadow)
-          ])
+          ]),
           ...this.props.style
-        ]},
+        ]}
         {...this._panResponder.panHandlers}
       >
         {this.props.children}
