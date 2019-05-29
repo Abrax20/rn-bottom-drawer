@@ -32,6 +32,7 @@ export default class Animator extends Component{
             styles.roundedEdges(this.props.roundedEdges),
             styles.shadow(this.props.shadow)
           ])
+          ...this.props.style
         ]}
         {...this._panResponder.panHandlers}
       >

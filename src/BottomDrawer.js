@@ -58,16 +58,21 @@ export default class BottomDrawer extends Component{
      * A callback function triggered when the drawer swiped into down position
      */
     onCollapsed: PropTypes.func
+
+    /**
+     * The React Native style of the drawer Component
+     */
+    style: PropTypes.style
   }
 
   static defaultProps = {
     offset: 0,
     startUp: true,
-    backgroundColor: '#ffffff',
+    shadow: false,
     roundedEdges: true,
-    shadow: true,
     onExpanded: () => {},
-    onCollapsed: () => {}
+    onCollapsed: () => {},
+    backgroundColor: '#ffffff',
   }
 
   constructor(props){
@@ -93,6 +98,7 @@ export default class BottomDrawer extends Component{
   render() {   
     return (
       <Animator
+        style={this.props.style}
         currentPosition = {this.state.currentPosition}
         setCurrentPosition = {(position) => this.setCurrentPosition(position)}
         toggleThreshold = {this.TOGGLE_THRESHOLD}
