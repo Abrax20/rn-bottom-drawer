@@ -57,7 +57,7 @@ export default class BottomDrawer extends Component{
     /**
      * A callback function triggered when the drawer swiped into down position
      */
-    onCollapsed: PropTypes.func
+    onCollapsed: PropTypes.func,
 
     /**
      * The React Native style of the drawer Component
@@ -67,6 +67,7 @@ export default class BottomDrawer extends Component{
 
   static defaultProps = {
     offset: 0,
+    style: {},
     startUp: true,
     shadow: false,
     roundedEdges: true,
